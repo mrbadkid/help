@@ -1,0 +1,14 @@
+resistor1=int(input("Please enter resistance of resistor 1 in (ohms):"))
+resistor2=int(input("Please enter resistance of resistor 2 in (ohms):"))
+resistor3=int(input("Please enter resistance of resistor 3 in (ohms):"))
+arrangement=input("Please choose series arrangement or parallel arrangement for the circuit:")
+series= resistor1 + resistor2 + resistor3
+parallel=1/(1/resistor1 + 1/resistor2 + 1 / resistor3)
+
+
+if series:
+    print(f"Resistance for the 3 resistors in series arrangement is :{series}")
+
+else:
+    print(f"Resistance for the 3 resistrs in parallel arrangement is :{parallel}")
+    
